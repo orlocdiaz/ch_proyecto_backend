@@ -1,57 +1,67 @@
 [
   {
     "id": 1,
+    "status": true,
     "title": "Coca Cola",
     "description": "Soda sabor cola",
     "code": "A001",
     "price": 23,
-    "status": true,
     "stock": 32,
     "category": "Soda",
-    "thumbnails": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQurZJvleuENmVj0v_PEN_amybjrzVORXXTtQ&usqp=CAU"]
+    "thumbnails": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQurZJvleuENmVj0v_PEN_amybjrzVORXXTtQ&usqp=CAU"
+    ]
   },
   {
     "id": 2,
+    "status": true,
     "title": "Fanta",
     "description": "Soda sabor naranja",
     "code": "A002",
     "price": 22.5,
-    "status": true,
     "stock": 44,
     "category": "Soda",
-    "thumbnails": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm9qBjSblNc72G70WacOJGE9Qm6fzxNPQA7S6GMHPpKKjqH370t2fKd-3i3-VmULMl1GI&usqp=CAU"]
+    "thumbnails": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm9qBjSblNc72G70WacOJGE9Qm6fzxNPQA7S6GMHPpKKjqH370t2fKd-3i3-VmULMl1GI&usqp=CAU"
+    ]
   },
   {
     "id": 3,
+    "status": true,
     "title": "Sprite",
     "description": "Soda sabor lima",
     "code": "A003",
     "price": 23.5,
-    "status": true,
     "stock": 37,
     "category": "Soda",
-    "thumbnails": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjxB76nItw1Mp-UvzkaLiP53WcxCKquS_9Nw&usqp=CAU"]
+    "thumbnails": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjxB76nItw1Mp-UvzkaLiP53WcxCKquS_9Nw&usqp=CAU"
+    ]
   },
   {
     "id": 4,
+    "status": true,
     "title": "Fuze Tea",
     "description": "Te helado sabor limón",
     "code": "A004",
     "price": 20.5,
-    "status": true,
     "stock": 52,
     "category": "Te helado",
-    "thumbnails": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6mflzjPls4DwKLZDJngaZ94TsZcpAZG_6_w&usqp=CAU"]
+    "thumbnails": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6mflzjPls4DwKLZDJngaZ94TsZcpAZG_6_w&usqp=CAU"
+    ]
   },
   {
     "id": 5,
+    "status": true,
     "title": "Powerade",
     "description": "Bebida energizante e hidratante",
     "code": "A005",
     "price": 25.5,
-    "status": true,
     "stock": 46,
     "category": "Isotónica",
-    "thumbnails": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg0gZcvwQOS8EhP5JDDONn59RHtcxkNGREnA&usqp=CAU"]
+    "thumbnails": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg0gZcvwQOS8EhP5JDDONn59RHtcxkNGREnA&usqp=CAU"
+    ]
   }
 ]
