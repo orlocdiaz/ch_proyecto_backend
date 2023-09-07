@@ -7,5 +7,6 @@ const viewsRouter = Router();
 viewsRouter.get('/', tryCatch(ViewsController.renderHome));
 viewsRouter.get('/home', tryCatch(ViewsController.renderHome));
 viewsRouter.get('/products', tryCatch(ViewsController.renderProducts));
+viewsRouter.get('/cart/:cid', tryCatch(ViewsController.renderCart));
 
 module.exports = viewsRouter;

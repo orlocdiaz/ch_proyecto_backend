@@ -1,0 +1,19 @@
+<main class='container'>
+  <h1>Cart</h1>
+  <section class='products'>
+    {{#each this}}
+      {{#if product}}
+
+        <div class='product'>
+          <img src='{{product.thumbnails}}' alt='{{product.title}}' class='productImg' />
+          <h3>{{product.title}}</h3>
+          <strong>Quantity: {{quantity}}</strong>
+          <p>${{product.price}}</p>
+          {{!-- <button>Remove</button> --}}
+        </div>
+      {{/if}}
+    {{/each}}
+  </section>
+</main>
+
+{{!-- <script src="scripts/cartScript.js"></script> --}}

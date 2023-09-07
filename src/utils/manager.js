@@ -57,7 +57,7 @@ class Manager {
   //*FOUND
   getFound = async (findParams, sort) => {
     const items = await this.service.get(findParams, null, sort);
-    if (items) {
+    if (items || items.length) {
       return items;
     } else {
       throw new MyError(
@@ -124,10 +124,23 @@ class Manager {
     return newId;
   };
 
+  //* ADD
   add = async (item) => {
     const added = await this.service.add(item);
     return added;
   };
+
+  //* ADD TO
+  addTo = async (id, item) =>{
+    const result = await this.service.addTo(id, item);
+    return result;
+  }
+
+  //* DELETE FROM
+  removeFrom = async (cid, pid) => {
+    const result = await this.service.removeFrom(cid, pid);
+    return result
+  }
 }
 
 module.exports = Manager;

@@ -9,8 +9,11 @@
           <h5>{{category}}</h5>
           <p>{{description}}</p>
           <strong>${{price}}</strong>
+          <button onclick="addToCart('{{this._id}}')">Add to cart</button>
         </div>
       {{/if}}
     {{/each}}
   </section>
 </main>
+
+<script src="scripts/homeScript.js"></script>
