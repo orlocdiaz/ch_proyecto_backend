@@ -9,43 +9,71 @@ class ViewsController {
     this.cartsManager = new Manager(CartsService);
   }
 
-  //* RENDER HOME
-  renderHome = async (req, res) => {
+  //* RENDER LOGIN
+  renderLogIn = async (req, res) => {
     try {
-      const products = await this.productsManager.getAll();
-      await res.render('home', products);
+      await res.render("logIn");
     } catch (error) {
-      res.render('error', { message: error.message });
+      res.render("error", { message: error.message });
+    }
+  };
+
+  //* RENDER REGISTER
+  renderRegister = async (req, res) => {
+    try {
+      await res.render("register");
+    } catch (error) {
+      res.render("error", { message: error.message });
+    }
+  };
+  //* RENDER PROFILE
+  renderProfile = async (req, res) => {
+    try {
+      await res.render("profile");
+    } catch (error) {
+      res.render("error", { message: error.message });
+    }
+  };
+
+  //* RENDER HOME
+  renderProducts = async (req, res) => {
+    try {
+      const name = req.session.name;
+      const role = req.session.role;
+      console.log(role);
+      const products = await this.productsManager.getAll();
+      await res.render("products", { name, products, role });
+    } catch (error) {
+      res.render("error", { message: error.message });
     }
   };
 
   //* RENDER PRODUCTS
-  renderProducts = async (req, res) => {
+  renderRTProducts = async (req, res) => {
     try {
       const products = await this.productsManager.getAll();
-      await res.render('products', products);
+      await res.render("rtproducts", products);
     } catch (error) {
-      res.render('error', { message: error.message });
+      res.render("error", { message: error.message });
     }
   };
 
   //* RENDER CHAT
   renderChat = async (req, res) => {
     try {
-      await res.render('chat');
+      await res.render("chat");
     } catch (error) {
-      res.render('error', { message: error.message });
+      res.render("error", { message: error.message });
     }
   };
 
   //* RENDER CART
   renderCart = async (req, res) => {
     const _id = req.params.cid;
-    console.log(_id);
 
     const cart = await this.cartsManager.getFound({ _id });
-    await res.render('cart', cart.products);
-  }
+    await res.render("cart", cart.products);
+  };
 }
 
 module.exports = new ViewsController();

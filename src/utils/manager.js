@@ -57,12 +57,12 @@ class Manager {
   //*FOUND
   getFound = async (findParams, sort) => {
     const items = await this.service.get(findParams, null, sort);
-    if (items || items.length) {
+    if (items || items?.length) {
       return items;
     } else {
       throw new MyError(
         404,
-        'Not Found',
+        "Not Found",
         `Unable to find item with {id: ${findParams.id}}`
       );
     }

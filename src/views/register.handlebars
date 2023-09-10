@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="col-md-10">
+    <form method="post" action="/api/users/register">
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label for="inputFName">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputFName"
+            placeholder="Jon"
+            name="firstName"
+          />
+        </div>
+        <div class="form-group col-md-5">
+          <label for="inputLName">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputLName"
+            placeholder="Doe"
+            name="lastName"
+          />
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputAge">Age</label>
+          <input type="number" class="form-control" id="inputAge" name="age" />
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="inputEmail">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            placeholder="Email@email.com"
+            name="email"
+          />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword"
+            placeholder="Secure Password"
+            name="password"
+          />
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Register</button>
+      <a class="btn btn-secondary" href="/">Log in</a>
+
+    </form>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="scripts/logInScript.js"></script>

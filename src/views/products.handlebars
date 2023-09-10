@@ -1,8 +1,20 @@
 <main class='container'>
-  <h1>Real Time Products</h1>
+  <h1>Home Products</h1>
+  <h3>Welcome {{this.name}} {{this.role}}</h3>
   <section class='products'>
+    {{#each this.products}}
+      {{#if title}}
+        <div class='product'>
+          <img src='{{thumbnails}}' alt='{{title}}' class='productImg' />
+          <h3>{{title}}</h3>
+          <h5>{{category}}</h5>
+          <p>{{description}}</p>
+          <strong>${{price}}</strong>
+          <button onclick="addToCart('{{this._id}}')">Add to cart</button>
+        </div>
+      {{/if}}
+    {{/each}}
   </section>
 </main>
 
-<script src='socket.io/socket.io.js'></script>
-<script src='scripts/productsScript.js'></script>
+<script src="scripts/homeScript.js"></script>
